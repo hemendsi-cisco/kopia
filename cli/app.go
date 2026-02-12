@@ -336,6 +336,7 @@ func NewApp() *App {
 			{"gdrive", "a Google Drive folder", func() StorageFlags { return &storageGDriveFlags{} }},
 
 			{"rclone", "a rclone-based provided", func() StorageFlags { return &storageRcloneFlags{} }},
+			{"awss3", "an AWS S3 bucket (AWS SDK v2)", func() StorageFlags { return &storageAWSS3Flags{} }},
 			{"s3", "an S3 bucket", func() StorageFlags { return &storageS3Flags{} }},
 			{"sftp", "an SFTP storage", func() StorageFlags { return &storageSFTPFlags{} }},
 			{"webdav", "a WebDAV storage", func() StorageFlags { return &storageWebDAVFlags{} }},
